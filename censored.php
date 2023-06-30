@@ -25,10 +25,35 @@ $newLength = strlen($wordCensored);
 <body>
     <div>
         <p>
-            <?php echo $sentence ?> <?php echo $textLength ?>
+            <strong>
+                Sentence inserted:
+            </strong>
+            <em>
+                <?php echo $sentence ?> 
+            </em>
+        </p>
+
+        <p>
+            <strong>Length of the sentence:</strong>
+            <em>
+                <?php echo $textLength ?>
+            </em>
+        </p>
+
+        <p>
+            The bad word that has to be censored is: 
+            <strong>
+                <?php echo $badWord ?>
+            </strong>
         </p>
         <p>
-            <?php echo $wordCensored ?> <?php echo $newLength?>
+            <strong>
+                The paragraph with the words/letters censored:
+            </strong>
+            <?php echo $wordCensored ?> 
+        </p>
+        <p>
+            New length: <?php echo $newLength?>
         </p>
     </div>
     
