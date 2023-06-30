@@ -3,7 +3,15 @@
 $sentence = $_GET('paragraph');
 $badWord = $_GET('badWord');
 
+//determino con funzione strlen lunghezza del primo paragrafo
 $textLength = strlen($sentence);
+
+//sostituisco il badWord con *** presente nel paragrafo inserito
+$wordCensored = str_replace($badWord, '****', $sentence);
+
+//determino nuovamente la lunghezza del nuovo paragrafo 
+$newLength = strlen ($wordCensored);
+
 
 
 ?>
